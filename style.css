@@ -1,8 +1,30 @@
+/*navbar*/
 .side-nav {
-  border: 3px solid #dedede;
+  background: #dedede;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  z-index: 1;
+  padding-top: 20px;
+  padding-left: 5px;
 }
 
-p {
+.side-a-nav a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #000000;
+}
+
+#main-doc {
+  margin-left: 15em;
+}
+
+p,
+.side-a-nav a,
+code {
   font-size: 20px;
 }
 
