@@ -1,35 +1,72 @@
+body {
+  font-size: 20px;
+}
+
+header {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main-section {
+  padding-top: 40px;
+  line-height: 40px;
+}
+
 /*navbar*/
 .side-nav {
   background: #dedede;
   position: fixed;
+  margin: 0;
   top: 0;
   left: 0;
   width: 25%;
   height: 100%;
-  z-index: 1;
   padding-top: 20px;
   padding-left: 5px;
+  overflow: auto;
 }
 
 .side-a-nav a {
   text-decoration: none;
   display: block;
-  padding: 10px;
+  padding: 10px 8px;
   color: #000000;
 }
 
 #main-doc {
-  margin-left: 15em;
+  position: absolute;
+  margin-left: 25%;
+  padding: 1px 16px;
 }
 
-p,
-.side-a-nav a,
-code {
-  font-size: 20px;
-}
-
-code {
-  background-color: #f7f7f7;
+pre {
+  background: #dedede;
+  line-height: 0.7cm;
+  margin-bottom: 1.5em;
   padding: 20px;
-  margin: 20px;
+  overflow: auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: #1d1e22;
+    color: #f7f7f7;
+  }
+
+  pre {
+    color: #000000;
+  }
+
+  .side-nav {
+    width: 100%;
+    height: 25%;
+  }
+
+  #main-doc {
+    padding-top: 10em;
+    width: 100%;
+    margin: 0;
+  }
 }
